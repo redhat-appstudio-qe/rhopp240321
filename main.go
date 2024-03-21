@@ -19,8 +19,8 @@ func main() {
 func HelloServer(w http.ResponseWriter, r *http.Request) {
 	path := r.URL.Path[1:]
 	if path != "" {
-		fmt.Fprintf(w, "Hi, %s!", r.URL.Path[1:])
+		fmt.Fprintf(w, "arst, %s!", r.URL.Path[1:])
 	} else {
-		fmt.Fprint(w, "Hi World!")
+		fmt.Fprint(w, "arst World!")
 	}
 }
